@@ -1,5 +1,7 @@
 # Talking Head Anime 3 Demo For AITuber
 
+![foraituber](https://github.com/miketako3/talking-head-anime-3-demo-for-aituber/assets/28917343/0009fc94-0bb6-4615-a6b8-1aab66fd3598)
+
 This repository is a system adaptation of Talking Head Anime 3 Demo for AITuber.
 It possesses the following features:
 

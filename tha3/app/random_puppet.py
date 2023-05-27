@@ -115,7 +115,7 @@ class MainFrame(wx.Frame):
         return
 
     def random_generate_value(self, min, max, origin_value):
-        random_value = random.choice(list(range(min, max, 1))) / 5000.0
+        random_value = random.choice(list(range(min, max, 1))) / 2500.0
         randomized = origin_value + random_value
         if randomized > 1.0:
             randomized = 1.0
@@ -130,7 +130,7 @@ class MainFrame(wx.Frame):
         for blendshape_name in BLENDSHAPE_NAMES:
             if "jawOpen" in blendshape_name:
                 if is_talking:
-                    current_pose[blendshape_name] = self.random_generate_value(-5000, 5000, current_pose[blendshape_name])
+                    current_pose[blendshape_name] = self.random_generate_value(-5000, 5000, abs(1 - current_pose[blendshape_name]))
                 else:
                     current_pose[blendshape_name] = 0
         for key in [HEAD_BONE_X, HEAD_BONE_Y, HEAD_BONE_Z, LEFT_EYE_BONE_X, LEFT_EYE_BONE_Y, LEFT_EYE_BONE_Z, RIGHT_EYE_BONE_X, RIGHT_EYE_BONE_Y, RIGHT_EYE_BONE_Z]:
