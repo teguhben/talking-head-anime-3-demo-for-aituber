@@ -14,16 +14,16 @@ The audio device at index 0 is selected by default. Please align this with the a
 
 We recommend using a virtual audio device such as [VB-CABLE](https://vb-audio.com/Cable/) to output the AITuber's voice.
 
-Firstly, please install the following packages.
+Firstly, please set up original talking head anime3 demo and install the following packages additionally.
 
 ```shell
 pip install sounddevice
 ```
 
-And then, please run the following command.
+And then, please run the following command instead of ifacialmocap_puppeteer.py .
 
 ```shell
-python tha3/app/ifacialmocap_puppeteer.py
+python tha3/app/random_puppet.py
 ```
 
 The original window will appear. Please set the image of the character you want to animate.
